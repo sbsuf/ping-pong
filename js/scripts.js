@@ -8,7 +8,7 @@
   else if ((i % 5===0 )&& (i % 15 !== 0) && (i % 3 !== 0))
     newNum += "pong";
 
-  else if ((i % 15 === 0) && (i % 3 !== 0) && (i % 5 !==0))
+  else if ((i % 15 === 0) )
     	 newNum += "ping pong";
   else
       newNum+=i;
