@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
     <title></title>
   </head>
   <body>
@@ -17,19 +18,31 @@
         <p> 2. Numbers divisible by 5 become "pong". </p>
         <p> 3. Numbers divisible by 3 and 5 become "pingpong" </p>
       </div>
-
-      <form id="input">
-        <div class="form-group">
-          <label for="year">Please your number number:</label>
-          <input id="number" type="text">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              About Ping Pong
+            </a>
+            <a href="#" class="list-group-item">Created by Justin Xu</a>
+            <a href="http://sbsut.github.io/ping-pong" class="list-group-item">Github URI</a>
+          </div>
         </div>
+        <div class="col-md-8">
+        <form id="input">
+          <div class="form-group">
+            <label for="year">Please your number number:</label>
+            <input id="number" type="text">
+          </div>
 
-        <button type="submit" class="btn btn-danger">Play</button>
-      </form>
+          <button type="submit" class="btn btn-danger btnADD">Play</button>
+        </form>
 
-      <div id="show">
-        <ul class="results">
-        </ul>
+        <div id="show">
+          <ul class="results">
+          </ul>
+        </div>
+      </div>
       </div>
     </div>
   </body>
