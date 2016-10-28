@@ -4,7 +4,7 @@
 
 #### By _**{Justin Xu}**_
 
-## website access _{http://sbsuf.github.io/Ping-Pong}_
+## website access _{http://sbsuf.github.io/ping-pong}_
 
 ## Description
 
