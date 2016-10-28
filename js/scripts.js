@@ -21,10 +21,10 @@ $(document).ready(function() {
     num = ($("input#number").val());
     results = count(num);
     results.forEach(function(result){
-      return result;
-      $("ul.results").append('<li>' + result + '</li>');
+      $("ul.results").append('<li>' + "your output is "+ result + "!"+'</li>');
       $("#show").show();
     });
+
     //$("#results").text(result);
 
     //$.each(newNums, function(value){
