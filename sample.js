@@ -1,6 +1,5 @@
-
 function count(num) {
-  newNums = [];
+   newNums = [];
   for (i=1; i<=num; i++) {
 
  	if ((i % 3===0 )&& (i % 15 !== 0) && (i % 5 !== 0))
@@ -13,25 +12,23 @@ function count(num) {
   else
       newNums.push(i);
 	}
-  return newNums;
+   //var newArr = newNums.map(function(newNum){
+     //return newNum;
+   //});
 };
+
 //user interface
 $(document).ready(function() {
   $("form#input").submit(function(event) {
-    num = ($("input#number").val());
-    results = count(num);
-    results.forEach(function(result){
-      return result;
-      $("ul.results").append('<li>' + result + '</li>');
-      $("#show").show();
-    });
-    //$("#results").text(result);
+      event.preventDefault();
 
+    var num = parseInt($("#number").val());
+    var results = count(num);
+    alert();
     //$.each(newNums, function(value){
       //$("#results").text(value);
       //$("#results").text("." + ":" + );
-      event.preventDefault();
+
     //$("#results").text(results);
   });
-
 });
