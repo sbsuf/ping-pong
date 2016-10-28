@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Track Suggestion Site</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/effects.js"></script>
+  </head>
+  <body>
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Track Suggestion Site</h1>
+          <h2>What Programming Language Should I learn?</h2>
+          <p>There are lots of trackes you can select, please answer the following 6 different questions, we will provide different track suggestions based on your answers</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <h2>Your Full Name</h2>
+                <input type="text" class="form-control" id="fullname" placeholder="Your Full Name">
+              </div>
+              <div class="form-group col-md-4">
+                <label class="well">How many years of coding experience do you have?</label>
+                <select class="form-control" id="qus1">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="1">1-2 years</option>
+                  <option value="2">2-5 years</option>
+                  <option value="3">5 years or more</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="well">What is your education background?</label>
+                <select class="form-control" id="qus2">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="1">Some college</option>
+                  <option value="2">Undergraduate</option>
+                  <option value="3">Graduate School or above</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="well">Do you want to become front-end or back-end web developer?</label>
+                <select class="form-control" id="qus3">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="1">Not Decided</option>
+                  <option value="2">Front-End</option>
+                  <option value="3">Back-End</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="well">Which Operating system do you use regularly?</label>
+                <select class="form-control" id="qus4">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="1">Mac OSX</option>
+                  <option value="2">Windows</option>
+                  <option value="3">Linux</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="well">Do you like to become mobile APP or just web only or both?</label>
+                <select class="form-control" id="qus5">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="1">Mobile APP</option>
+                  <option value="2">Web Only</option>
+                  <option value="3">Both</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="well">What is your career goal?</label>
+                <select class="form-control" id="qus6">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="1">Startup</option>
+                  <option value="2">Work for tech company</option>
+                  <option value="3">Both</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-danger" id="fadein">Submit</button>
+            </form>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="rec panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title"></span>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    <h4 id="main"></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2016 Justin Xu<p>
+      </div>
+  </body>
+</html>

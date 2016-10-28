@@ -1,3 +1,11 @@
-#show {
+.rec {
   display: none;
+}
+
+body {
+  background-image: url(../img/ping_pong.jpg);
+}
+
+label {
+  font-size: 20px;
 }

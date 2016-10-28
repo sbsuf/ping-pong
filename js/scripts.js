@@ -20,8 +20,8 @@ $(document).ready(function() {
     num = ($("input#number").val());
     results = count(num);
     results.forEach(function(result){
-      $("ul.results").append('<li>' + "your output is "+ result + "!"+'</li>');
-      $("#show").show();
+      $("#main").append('<li>' + "your output is "+ result + "!"+'</li>');
+      $(".rec").show();
     });
       event.preventDefault();
   });
