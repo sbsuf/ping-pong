@@ -1,17 +1,17 @@
- function count(num) {
-   newNum = "";
+function count(num) {
+    newNum = [];
   for (i=1; i<=num; i++) {
 
 
  	if ((i % 3===0 )&& (i % 15 !== 0) && (i % 5 !== 0))
-    newNum += "ping"
+    newNum.push("ping");
   else if ((i % 5===0 )&& (i % 15 !== 0) && (i % 3 !== 0))
-    newNum += "pong";
+    newNum.push("pong");
 
   else if ((i % 15 === 0) )
-    	 newNum += "ping pong";
+    	 newNum.push("ping pong");
   else
-      newNum+=i;
+      newNum.push(i);
 	}
 };
 
